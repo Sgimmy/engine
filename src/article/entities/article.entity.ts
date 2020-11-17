@@ -18,6 +18,12 @@ export class Article {
   })
   description: string;
 
+  @Column('json', {
+    nullable: true,
+    comment: 'Contenuto articolo'
+  })
+  content: string;
+
   @Column({
     nullable: true,
     comment: 'Thumbnail articolo'

@@ -2,12 +2,14 @@ import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/commo
 import { ArticleService } from './article.service';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
+import { CrawlerService } from '../commons/services/crawler.service';
 
 @Controller('article')
 export class ArticleController {
 
   constructor(
-    private articleService: ArticleService
+    private articleService: ArticleService,
+    private crawlerService: CrawlerService
   ) {}
 
   @Get()
@@ -21,8 +23,15 @@ export class ArticleController {
   }
 
   @Post()
-  save(@Body() createArticleDto: CreateArticleDto) {
-    return this.articleService.create(createArticleDto);
+  async save(@Body() createArticleDto: CreateArticleDto) {
+    const resource = await this.crawlerService.fetch(createArticleDto.source);
+    const article = await this.crawlerService.extractArticle(resource);
+    return this.articleService.create({
+      title: article.title,
+      content: article.content,
+      thumbnail: article.thumbnail,
+      source: createArticleDto.source
+    });
   }
 
   @Patch(':id')
