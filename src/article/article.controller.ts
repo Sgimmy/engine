@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 import { ArticleService } from './article.service';
 import { CreateArticleDto } from './dto/create-article.dto';
+import { UpdateArticleDto } from './dto/update-article.dto';
 
 @Controller('article')
 export class ArticleController {
@@ -24,14 +25,13 @@ export class ArticleController {
     return this.articleService.create(createArticleDto);
   }
 
-  @Patch()
-  update(obj: any) {
+  @Patch(':id')
+  update(
+    @Param('id') id: number,
+    @Body() updateArticleDto: UpdateArticleDto
+  ) {}
 
-  }
-
-  @Delete()
-  cancel(id: number) {
-
-  }
+  @Delete(':id')
+  cancel(@Param('id') id: number) {}
 
 }

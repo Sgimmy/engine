@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed6256a-dc64-4259-8d87-cdfa42ef8d2f" name="Default Changelist" comment="first commit">
+    <list default="true" id="7ed6256a-dc64-4259-8d87-cdfa42ef8d2f" name="Default Changelist" comment="banish .idea">
+      <change afterPath="$PROJECT_DIR$/src/article/dto/update-article.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/article/article.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/article/article.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605603278501</updated>
-      <workItem from="1605603279547" duration="5750000" />
+      <workItem from="1605603279547" duration="6504000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1605608438194</created>
@@ -88,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605608438194</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="banish .idea">
+      <created>1605609387137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605609387137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +119,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="banish .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="banish .idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2044" y="361" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605604319022">
@@ -118,26 +131,26 @@
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
     <state x="2318" y="453" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3440.1352@0.23.3440.1352" timestamp="1605604070690" />
-    <state width="1678" height="380" key="GridCell.Tab.0.bottom" timestamp="1605607989215">
+    <state width="1678" height="380" key="GridCell.Tab.0.bottom" timestamp="1605610088244">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.bottom/0.23.3440.1352@0.23.3440.1352" timestamp="1605607989215" />
-    <state width="1678" height="380" key="GridCell.Tab.0.center" timestamp="1605607989215">
+    <state width="1678" height="380" key="GridCell.Tab.0.bottom/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088244" />
+    <state width="1678" height="380" key="GridCell.Tab.0.center" timestamp="1605610088243">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.center/0.23.3440.1352@0.23.3440.1352" timestamp="1605607989215" />
-    <state width="1678" height="380" key="GridCell.Tab.0.left" timestamp="1605607989214">
+    <state width="1678" height="380" key="GridCell.Tab.0.center/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088243" />
+    <state width="1678" height="380" key="GridCell.Tab.0.left" timestamp="1605610088242">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.left/0.23.3440.1352@0.23.3440.1352" timestamp="1605607989214" />
-    <state width="1678" height="380" key="GridCell.Tab.0.right" timestamp="1605607989215">
+    <state width="1678" height="380" key="GridCell.Tab.0.left/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088242" />
+    <state width="1678" height="380" key="GridCell.Tab.0.right" timestamp="1605610088243">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.right/0.23.3440.1352@0.23.3440.1352" timestamp="1605607989215" />
-    <state x="2180" y="439" key="Vcs.Push.Dialog.v2" timestamp="1605608440797">
+    <state width="1678" height="380" key="GridCell.Tab.0.right/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088243" />
+    <state x="2180" y="439" key="Vcs.Push.Dialog.v2" timestamp="1605609389985">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
-    <state x="2180" y="439" key="Vcs.Push.Dialog.v2/0.23.3440.1352@0.23.3440.1352" timestamp="1605608440797" />
+    <state x="2180" y="439" key="Vcs.Push.Dialog.v2/0.23.3440.1352@0.23.3440.1352" timestamp="1605609389985" />
     <state x="1351" y="498" width="1259" height="886" key="dock-window-1" timestamp="1605605740834">
       <screen x="0" y="23" width="3440" height="1352" />
     </state>
