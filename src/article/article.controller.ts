@@ -25,13 +25,18 @@ export class ArticleController {
   @Post()
   async save(@Body() createArticleDto: CreateArticleDto) {
     const resource = await this.crawlerService.fetch(createArticleDto.source);
-    const article = await this.crawlerService.extractArticle(resource);
-    return this.articleService.create({
-      title: article.title,
-      content: article.content,
-      thumbnail: article.thumbnail,
+    const data = await this.crawlerService.extractArticle(resource);
+    const article = {
+      title: data.title,
+      content: data.content,
+      description: null,
+      thumbnail: data.thumbnail,
       source: createArticleDto.source
-    });
+    };
+    if (data.description && data.description.length) {
+      article.description = data.description;
+    }
+    return this.articleService.create(article);
   }
 
   @Patch(':id')

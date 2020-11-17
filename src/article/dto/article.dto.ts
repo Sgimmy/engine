@@ -5,6 +5,9 @@ export class Article {
   title: string;
 
   @IsString()
+  description: string|null;
+
+  @IsString()
   content: string;
 
   @IsString()
