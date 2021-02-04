@@ -13,6 +13,9 @@ export class CreateArticleDto {
   @IsUrl()
   source: string;
 
+  @IsString()
+  uid: string;
+
   @IsArray()
   tags: Array<string>;
 }

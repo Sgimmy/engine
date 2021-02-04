@@ -1,4 +1,12 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+} from '@nestjs/common';
 import { ArticleService } from './article.service';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
@@ -6,15 +14,19 @@ import { CrawlerService } from '../commons/services/crawler.service';
 
 @Controller('article')
 export class ArticleController {
-
   constructor(
     private articleService: ArticleService,
-    private crawlerService: CrawlerService
+    private crawlerService: CrawlerService,
   ) {}
 
-  @Get()
-  getAll() {
-    return this.articleService.findAll();
+  @Get(':uid')
+  getAll(@Param('uid') uid: string) {
+    return this.articleService.findAll(uid);
+  }
+
+  @Get('tags/:uid')
+  getAllTags(@Param('uid') uid: string) {
+    return this.articleService.findAllTags(uid);
   }
 
   @Get(':id')
@@ -29,9 +41,11 @@ export class ArticleController {
     const article = {
       title: data.title,
       content: data.content,
-      description: null,
+      description: data.description ? data.description : null,
       thumbnail: data.thumbnail,
-      source: createArticleDto.source
+      source: createArticleDto.source,
+      tags: createArticleDto.tags,
+      uid: createArticleDto.uid,
     };
     if (data.description && data.description.length) {
       article.description = data.description;
@@ -40,12 +54,8 @@ export class ArticleController {
   }
 
   @Patch(':id')
-  update(
-    @Param('id') id: number,
-    @Body() updateArticleDto: UpdateArticleDto
-  ) {}
+  update(@Param('id') id: number, @Body() updateArticleDto: UpdateArticleDto) {}
 
   @Delete(':id')
   cancel(@Param('id') id: number) {}
-
 }

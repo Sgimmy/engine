@@ -2,24 +2,47 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Article } from './dto/article.dto';
 import { Repository } from 'typeorm';
-import { CreateArticleDto } from './dto/create-article.dto';
 
 @Injectable()
 export class ArticleService {
-
   constructor(
-    @InjectRepository(Article) private readonly articleRepository: Repository<Article>
+    @InjectRepository(Article)
+    private readonly articleRepository: Repository<Article>,
   ) {}
 
-  async findAll() {
-    return this.articleRepository.find();
+  async findAll(uid) {
+    const articleList = await this.articleRepository.find({
+      where: {
+        uid,
+      },
+    });
+
+    if (!articleList) {
+      return [];
+    }
+    return articleList;
+  }
+
+  async findAllTags(uid) {
+    const tags = await this.articleRepository.find({
+      where: {
+        uid,
+      },
+      select: ['tags'],
+    });
+
+    if (!tags) {
+      return [];
+    }
+
+    return tags[0];
   }
 
   async findOne(id: number) {
     const article = await this.articleRepository.findOne({
       where: {
-        id
-      }
+        id,
+      },
     });
     if (!article) {
       throw new NotFoundException();
@@ -31,5 +54,4 @@ export class ArticleService {
     const trx = await this.articleRepository.create(article);
     return this.articleRepository.save(trx);
   }
-
 }

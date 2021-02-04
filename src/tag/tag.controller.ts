@@ -1,4 +1,12 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
+import { TagService } from './tag.service';
 
-@Controller('tag')
-export class TagController {}
+@Controller('tags')
+export class TagController {
+  constructor(private tagService: TagService) {}
+
+  @Get(':uid')
+  getAll(@Param('uid') uid: string) {
+    return this.tagService.findAll('uid');
+  }
+}
