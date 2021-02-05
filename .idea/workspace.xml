@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ed6256a-dc64-4259-8d87-cdfa42ef8d2f" name="Default Changelist" comment="wip">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,10 @@
     <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -81,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605603278501</updated>
       <workItem from="1605603279547" duration="7070000" />
+      <workItem from="1612525156802" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1605608438194</created>
@@ -119,49 +123,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="banish .idea" />
     <MESSAGE value="wip" />
     <option name="LAST_COMMIT_MESSAGE" value="wip" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2044" y="361" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605604319022">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state x="2044" y="361" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3440.1352@0.23.3440.1352" timestamp="1605604319022" />
-    <state x="2318" y="453" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605604070690">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state x="2318" y="453" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3440.1352@0.23.3440.1352" timestamp="1605604070690" />
-    <state width="1678" height="380" key="GridCell.Tab.0.bottom" timestamp="1605610088244">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.bottom/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088244" />
-    <state width="1678" height="380" key="GridCell.Tab.0.center" timestamp="1605610088243">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.center/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088243" />
-    <state width="1678" height="380" key="GridCell.Tab.0.left" timestamp="1605610088242">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.left/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088242" />
-    <state width="1678" height="380" key="GridCell.Tab.0.right" timestamp="1605610088243">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state width="1678" height="380" key="GridCell.Tab.0.right/0.23.3440.1352@0.23.3440.1352" timestamp="1605610088243" />
-    <state x="2180" y="439" key="Vcs.Push.Dialog.v2" timestamp="1605610141573">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state x="2180" y="439" key="Vcs.Push.Dialog.v2/0.23.3440.1352@0.23.3440.1352" timestamp="1605610141573" />
-    <state x="1351" y="498" width="1259" height="886" key="dock-window-1" timestamp="1605605740834">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state x="1351" y="498" width="1259" height="886" key="dock-window-1/0.23.3440.1352@0.23.3440.1352" timestamp="1605605740834" />
-    <state x="2245" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1605606002735">
-      <screen x="0" y="23" width="3440" height="1352" />
-    </state>
-    <state x="2245" y="332" width="670" height="676" key="search.everywhere.popup/0.23.3440.1352@0.23.3440.1352" timestamp="1605606002735" />
   </component>
 </project>
