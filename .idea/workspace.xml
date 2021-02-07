@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed6256a-dc64-4259-8d87-cdfa42ef8d2f" name="Default Changelist" comment="wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/article/article.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/article/article.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/article/dto/article.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/article/dto/article.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/services/crawler.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/services/crawler.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -159,6 +160,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
