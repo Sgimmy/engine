@@ -22,6 +22,6 @@ async function bootstrap() {
     transform: true,
     forbidNonWhitelisted: true
   }));
-  await app.listen(configuration().port);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
